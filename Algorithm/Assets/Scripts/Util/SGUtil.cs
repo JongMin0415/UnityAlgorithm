@@ -17,6 +17,8 @@ public static class SGUtil
     {
         X_AXIS_Y,
         X_AXIS_Z,
+        X_AND_Y,
+        X_AND_Z,
     }
 
     public enum TIME
