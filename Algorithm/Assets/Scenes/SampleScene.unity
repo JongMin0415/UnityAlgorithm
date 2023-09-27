@@ -123,6 +123,70 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &227103961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227103962}
+  - component: {fileID: 227103963}
+  m_Layer: 0
+  m_Name: Shot Waving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &227103962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227103961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 328113842}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &227103963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227103961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a409f5d76212147aaab550c3153e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 418726300863820295, guid: fd5ad81817534424cb29e285d119dd8a, type: 3}
+  projectileNum: 400
+  projectileSpeed: 10
+  accelerationSpeed: 0
+  useMaxSpeed: 0
+  maxSpeed: 0
+  useMinSpeed: 0
+  minSpeed: 0
+  accelerationTurn: 0
+  usePauseAndResume: 0
+  pauseTime: 0
+  resumeTime: 0
+  useAutoRelease: 0
+  autoReleaseTime: 10
+  wayNum: 8
+  waveCenterAngle: 180
+  waveRangeSize: 70
+  waveSpeed: 6
+  betweenAngle: 45
+  nextLineDelay: 0.05
 --- !u!1 &328113837
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +231,8 @@ MonoBehaviour:
   - shotObj: {fileID: 1234604027}
     afterDelay: 0
   - shotObj: {fileID: 2119812904}
+    afterDelay: 0
+  - shotObj: {fileID: 227103963}
     afterDelay: 0
   updateStep: 0
 --- !u!65 &328113839
@@ -246,6 +312,7 @@ Transform:
   m_Children:
   - {fileID: 1234604029}
   - {fileID: 2119812905}
+  - {fileID: 227103962}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -633,12 +700,12 @@ GameObject:
   - component: {fileID: 2119812905}
   - component: {fileID: 2119812904}
   m_Layer: 0
-  m_Name: Shot (1)
+  m_Name: Shot Multi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2119812904
 MonoBehaviour:
   m_ObjectHideFlags: 0
