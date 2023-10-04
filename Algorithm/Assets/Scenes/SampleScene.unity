@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &227103962
 Transform:
   m_ObjectHideFlags: 0
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 418726300863820295, guid: fd5ad81817534424cb29e285d119dd8a, type: 3}
-  projectileNum: 400
-  projectileSpeed: 10
+  projectileNum: 100
+  projectileSpeed: 5
   accelerationSpeed: 0
   useMaxSpeed: 0
   maxSpeed: 0
@@ -182,11 +182,11 @@ MonoBehaviour:
   useAutoRelease: 0
   autoReleaseTime: 10
   wayNum: 8
-  waveCenterAngle: 180
-  waveRangeSize: 70
+  waveCenterAngle: 60
+  waveRangeSize: 60
   waveSpeed: 6
-  betweenAngle: 45
-  nextLineDelay: 0.05
+  betweenAngle: 30
+  nextLineDelay: 0.3
 --- !u!1 &328113837
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shooting: 1
-  axisMove: 3
+  axisMove: 2
   inheritAngle: 0
   startOnAwake: 1
   startOnAwakeDelay: 1
@@ -231,7 +231,7 @@ MonoBehaviour:
   - shotObj: {fileID: 1234604027}
     afterDelay: 0
   - shotObj: {fileID: 2119812904}
-    afterDelay: 0
+    afterDelay: 5
   - shotObj: {fileID: 227103963}
     afterDelay: 0
   updateStep: 0
@@ -306,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328113837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.8, y: 4.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -719,9 +719,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 418726300863820295, guid: fd5ad81817534424cb29e285d119dd8a, type: 3}
-  projectileNum: 1000
+  projectileNum: 10
   projectileSpeed: 1
-  accelerationSpeed: 1
+  accelerationSpeed: 0
   useMaxSpeed: 0
   maxSpeed: 0
   useMinSpeed: 0
@@ -731,11 +731,11 @@ MonoBehaviour:
   pauseTime: 0
   resumeTime: 0
   useAutoRelease: 0
-  autoReleaseTime: 10
-  spiralWayNum: 20
+  autoReleaseTime: 0
+  spiralWayNum: 10
   startAngle: 180
-  shiftAngle: 5
-  betweenDalay: 0.1
+  shiftAngle: 0
+  betweenDalay: 10
 --- !u!4 &2119812905
 Transform:
   m_ObjectHideFlags: 0
