@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shooting: 1
-  axisMove: 2
+  axisMove: 3
   inheritAngle: 0
   startOnAwake: 1
   startOnAwakeDelay: 1
@@ -299,6 +299,8 @@ MonoBehaviour:
   - shotObj: {fileID: 167620788}
     afterDelay: 0
   - shotObj: {fileID: 908329468}
+    afterDelay: 0
+  - shotObj: {fileID: 623093896}
     afterDelay: 0
   updateStep: 0
 --- !u!65 &328113839
@@ -381,6 +383,7 @@ Transform:
   - {fileID: 227103962}
   - {fileID: 167620789}
   - {fileID: 908329467}
+  - {fileID: 623093897}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -427,6 +430,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &623093895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623093897}
+  - component: {fileID: 623093896}
+  m_Layer: 0
+  m_Name: PrintShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &623093896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623093895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd0d64c9eed4024f91cc70accef262f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 418726300863820295, guid: fd5ad81817534424cb29e285d119dd8a, type: 3}
+  projectileNum: 100
+  projectileSpeed: 20
+  accelerationSpeed: 1
+  useMaxSpeed: 0
+  maxSpeed: 0
+  useMinSpeed: 0
+  minSpeed: 0
+  accelerationTurn: 0
+  usePauseAndResume: 0
+  pauseTime: 0
+  resumeTime: 0
+  useAutoRelease: 0
+  autoReleaseTime: 10
+  paintDataText: {fileID: 4900000, guid: 65e2217d5bf0d7448ac2d47d49770910, type: 3}
+  paintCenterAngle: 180
+  betweenAngle: 3
+  nextLineDelay: 0.1
+--- !u!4 &623093897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623093895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 328113842}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
@@ -539,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &908329467
 Transform:
   m_ObjectHideFlags: 0
